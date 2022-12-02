@@ -1,0 +1,31 @@
+/* en vrac :
+  auto  
+ height flex  none  
+
+*/ 
+* {
+    /* change le box model */
+    box-sizing: border-box;
+    }
+    img {
+       width: 100% ; max-width: 100%;
+      
+    }
+    .carrousel_parent-ecrans {
+      /* aligne horizontalement les enfants */
+      display: flex;
+      /* largeur du parent */
+      width: 100%;
+      scroll-snap-type: x mandatory;
+    
+    }
+    .carrousel_ecran {
+      /* largeur du parent pour chaque enfant */
+      width: auto;
+      /* permet de garder toute la largeur du parent
+       */
+       scroll-snap-align: start;
+    }
+    .carrousel_ecran figure {
+      margin: 0;
+    }
