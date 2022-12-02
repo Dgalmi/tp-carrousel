@@ -7,8 +7,11 @@
     /* change le box model */
     box-sizing: border-box;
     }
+
+
     img {
-       width: 100% ; max-width: 100%;
+       height: 100% ;
+        max-width: auto;
       
     }
     .carrousel_parent-ecrans {
@@ -16,16 +19,18 @@
       display: flex;
       /* largeur du parent */
       width: 100%;
+      overflow-x: scroll;
       scroll-snap-type: x mandatory;
     
     }
     .carrousel_ecran {
       /* largeur du parent pour chaque enfant */
-      width: auto;
+      width: 100%;
       /* permet de garder toute la largeur du parent
        */
        scroll-snap-align: start;
     }
     .carrousel_ecran figure {
       margin: 0;
+      scroll-snap-align: start;
     }
